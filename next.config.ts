@@ -4,9 +4,6 @@ const nextConfig: NextConfig = {
     // Enable compression for smaller bundle sizes
     compress: true,
 
-    // Custom build directory
-    distDir: "dist",
-
     // Generate a consistent build ID from Git hash or timestamp
     generateBuildId: async () => {
         return process.env.GIT_HASH || `build-${Date.now()}`;
